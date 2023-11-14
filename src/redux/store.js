@@ -12,7 +12,7 @@ import {
   persistStore,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from 'auth/slice';
+import { authReducer } from 'redux/auth/slice';
 
 const persistConfig = {
   key: 'auth',

@@ -1,4 +1,4 @@
-import { selectIsLoggedIn } from 'auth/selectors';
+import { selectIsLoggedIn } from 'redux/auth/selectors';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 

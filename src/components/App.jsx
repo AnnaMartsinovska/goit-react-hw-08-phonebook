@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectRefresh } from 'auth/selectors';
+import { selectRefresh } from 'redux/auth/selectors';
 import { fetchRefresh } from 'services/authApi';
 import { PulseLoader } from 'react-spinners';
 import { Route, Routes } from 'react-router-dom';

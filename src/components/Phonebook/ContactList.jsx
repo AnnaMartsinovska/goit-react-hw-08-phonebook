@@ -37,7 +37,7 @@ export const ContactList = () => {
       <StyledList>
         {filteredContacts.map(contact => (
           <StyledEl key={contact.id}>
-            {contact.name} : {contact.phone}
+            {contact.name} : {contact.number}
             <button
               onClick={() => handleDelete(contact.id)}
               style={inlineStyle}

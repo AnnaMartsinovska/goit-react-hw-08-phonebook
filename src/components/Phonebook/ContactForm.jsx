@@ -8,7 +8,8 @@ import {
 
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
-import { getContacts, addContact } from 'redux/sliceContacts';
+import { getContacts } from 'redux/sliceContacts';
+import { fetchAddContacts } from 'services/api';
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
@@ -54,7 +55,7 @@ export const ContactForm = () => {
 
     copy
       ? alert(`${contact.name} is already in contacts.`)
-      : dispatch(addContact(contact));
+      : dispatch(fetchAddContacts(contact));
   };
 
   return (

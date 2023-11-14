@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectError } from 'redux/sliceContacts';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { fetchLogin } from 'services/authApi';
-import { selectIsLoggedIn } from 'auth/selectors';
+import { selectIsLoggedIn } from 'redux/auth/selectors';
 
 const Login = () => {
   const dispatch = useDispatch();

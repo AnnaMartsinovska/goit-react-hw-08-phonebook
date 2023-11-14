@@ -1,4 +1,4 @@
-import { selectIsLoggedIn, selectUser } from 'auth/selectors';
+import { selectIsLoggedIn, selectUser } from 'redux/auth/selectors';
 import React from 'react';
 import { useSelector } from 'react-redux';
 

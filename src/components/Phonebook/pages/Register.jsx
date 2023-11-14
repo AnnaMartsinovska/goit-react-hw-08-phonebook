@@ -1,4 +1,4 @@
-import { selectIsLoggedIn } from 'auth/selectors';
+import { selectIsLoggedIn } from 'redux/auth/selectors';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
