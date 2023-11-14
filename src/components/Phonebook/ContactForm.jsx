@@ -8,7 +8,7 @@ import {
 
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
-import { getContacts, addContact } from 'components/redux/sliceContacts';
+import { getContacts, addContact } from 'redux/sliceContacts';
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
@@ -75,7 +75,9 @@ export const ContactForm = () => {
         required
         value={number}
       />
-      <StyledButton type="submit">Add contact</StyledButton>
+      <StyledButton disabled={!name} type="submit">
+        Add contact
+      </StyledButton>
     </StyledForm>
   );
 };

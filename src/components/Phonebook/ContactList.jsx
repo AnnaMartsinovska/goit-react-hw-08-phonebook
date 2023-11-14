@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
-import {
-  getContacts,
-  selectLoading,
-  selectError,
-} from 'components/redux/sliceContacts';
+import { getContacts, selectLoading, selectError } from 'redux/sliceContacts';
 import { StyledList, StyledEl } from './Phonebook.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { getFilter } from 'components/redux/sliceFilter';
+import { getFilter } from 'redux/sliceFilter';
 import { fetchDeleteContacts } from 'services/api';
 import { PulseLoader } from 'react-spinners';
 
